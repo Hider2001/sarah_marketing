@@ -7,21 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Control Panel -->
     <div class="control-panel" id="controlPanel">
         <div class="panel-header">
-            <h3>⚙️ لوحة التحكم</h3>
+            <h3><i class="fas fa-cog"></i> لوحة التحكم</h3>
             <p>قم بتعديل المعلومات ثم اضغط طباعة</p>
         </div>
         
         <div class="panel-tabs">
-            <button class="tab-btn active" onclick="showTab('client-tab')">العميل</button>
-            <button class="tab-btn" onclick="showTab('agency-tab')">الوكالة</button>
-            <button class="tab-btn" onclick="showTab('pricing-tab')">الأسعار</button>
-            <button class="tab-btn" onclick="showTab('content-tab')">المحتوى</button>
+            <button class="tab-btn active" onclick="showTab('client-tab')"><i class="fas fa-user"></i> العميل</button>
+            <button class="tab-btn" onclick="showTab('agency-tab')"><i class="fas fa-building"></i> الوكالة</button>
+            <button class="tab-btn" onclick="showTab('pricing-tab')"><i class="fas fa-dollar-sign"></i> الأسعار</button>
+            <button class="tab-btn" onclick="showTab('content-tab')"><i class="fas fa-file-alt"></i> المحتوى</button>
         </div>
 
         <div class="panel-content">
@@ -99,13 +100,13 @@
         </div>
 
         <div class="panel-actions">
-            <button class="btn-print" onclick="window.print()">🖨️ طباعة / حفظ PDF</button>
-            <button class="btn-reset" onclick="resetDefaults()">↺ استعادة الافتراضي</button>
+            <button class="btn-print" onclick="window.print()"><i class="fas fa-print"></i> طباعة / حفظ PDF</button>
+            <button class="btn-reset" onclick="resetDefaults()"><i class="fas fa-undo"></i> استعادة الافتراضي</button>
         </div>
     </div>
 
     <!-- Toggle Panel Button (visible when panel is hidden) -->
-    <button class="toggle-panel" id="togglePanel" onclick="togglePanel()">⚙️</button>
+    <button class="toggle-panel" id="togglePanel" onclick="togglePanel()"><i class="fas fa-cog"></i></button>
 
     <!-- Page 1: Cover -->
     <section class="page cover-page">
@@ -178,31 +179,31 @@
         </div>
         <div class="services-grid">
             <div class="service-item">
-                <div class="service-icon">📱</div>
+                <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
                 <span>إدارة مواقع التواصل الاجتماعي</span>
             </div>
             <div class="service-item">
-                <div class="service-icon">🎨</div>
+                <div class="service-icon"><i class="fas fa-palette"></i></div>
                 <span>إعداد المحتوى المؤثر الفعال</span>
             </div>
             <div class="service-item">
-                <div class="service-icon">✏️</div>
+                <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
                 <span>إعداد التصاميم</span>
             </div>
             <div class="service-item">
-                <div class="service-icon">📊</div>
+                <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
                 <span>المراقبة والتحليل</span>
             </div>
             <div class="service-item">
-                <div class="service-icon">💬</div>
+                <div class="service-icon"><i class="fas fa-comments"></i></div>
                 <span>الإجابة على الاستفسارات</span>
             </div>
             <div class="service-item">
-                <div class="service-icon">🎬</div>
+                <div class="service-icon"><i class="fas fa-film"></i></div>
                 <span>فيديوهات الموشن جرافيك</span>
             </div>
             <div class="service-item">
-                <div class="service-icon">🎥</div>
+                <div class="service-icon"><i class="fas fa-video"></i></div>
                 <span>فيديوهات الريلز (تصوير - تحريك)</span>
             </div>
         </div>
@@ -280,17 +281,17 @@
             
             <div class="visual-types">
                 <div class="visual-item">
-                    <div class="visual-icon">🎨</div>
+                    <div class="visual-icon"><i class="fas fa-paint-brush"></i></div>
                     <h4>التصميم الجرافيكي</h4>
                     <p>سنستخدم تصاميم الدمج بشكل كبير وذلك لاظهار المنتجات بشكلها الحقيقي كما يمكننا الحصول على نتيجة اكثر احترافية.</p>
                 </div>
                 <div class="visual-item">
-                    <div class="visual-icon">📷</div>
+                    <div class="visual-icon"><i class="fas fa-camera"></i></div>
                     <h4>الصور الثابتة</h4>
                     <p>سيتم استخدام الصور الثابته لاظهار المنتجات او التجهيزات التي يتميز بها نكهات كافية على وجه الخصوص.</p>
                 </div>
                 <div class="visual-item">
-                    <div class="visual-icon">🎬</div>
+                    <div class="visual-icon"><i class="fas fa-play-circle"></i></div>
                     <h4>الفيديوهات القصيرة</h4>
                     <p>تعتبر الفيديوهات القصيرة هي الاكثر انتشاراً في الوقت الحالي لذلك سيتم عمل فيديوهات فكاهية وقصيرة ومناسبة للشباب.</p>
                 </div>
