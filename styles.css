@@ -157,17 +157,29 @@ body {
     align-items: center;
 }
 
+.agency-logo-img {
+    width: 280px;
+    max-width: 82%;
+    height: auto;
+    display: block;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 8px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
 .logo-text {
-    font-size: 2.5rem;
+    font-size: 1.05rem;
     font-weight: 900;
     color: #ffffff;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-top: 10px;
 }
 
 .logo-subtitle {
-    font-size: 0.9rem;
-    color: rgba(255,255,255,0.7);
+    font-size: 0.92rem;
+    color: rgba(255,255,255,0.86);
     margin-top: 5px;
 }
 
@@ -774,6 +786,7 @@ body {
     height: 150px;
     background: linear-gradient(90deg, #f5a623 0%, #ff8c42 50%, #f5a623 100%);
     clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 0;
 }
 
 .thank-you-content {
@@ -782,6 +795,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .thank-you-title {
@@ -804,13 +819,35 @@ body {
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 30px;
     margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 120px;
 }
 
 .thank-you-footer .contact-info {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: rgba(255,255,255,0.8);
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.thank-you-footer .agency-logo {
+    align-items: flex-end;
+}
+
+.thank-you-footer .agency-logo-img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.thank-you-footer .logo-text,
+.thank-you-footer .logo-subtitle {
+    text-align: right;
 }
 
 /* Control Panel Styles */
@@ -1067,5 +1104,22 @@ body {
         min-height: auto;
         flex-direction: row;
         padding: 20px;
+    }
+
+    .thank-you-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .thank-you-footer .contact-info,
+    .thank-you-footer .logo-text,
+    .thank-you-footer .logo-subtitle {
+        text-align: center;
+    }
+
+    .thank-you-footer .agency-logo {
+        align-items: center;
     }
 }
